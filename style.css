@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #111, #333);
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.produse {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background: #222;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.galerie {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
