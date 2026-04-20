@@ -110,3 +110,39 @@ nav a {
 .light-mode nav a {
     color: black;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.map {
+    width: 400px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: orange;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    display: none; /* ascuns la început */
+    z-index: 9999;
+}
