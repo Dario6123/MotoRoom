@@ -19,3 +19,16 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+
+let total = 0;
+
+function addToCart(nume, pret) {
+    let lista = document.getElementById("cartItems");
+
+    let item = document.createElement("li");
+    item.textContent = nume + " - " + pret + "€";
+    lista.appendChild(item);
+
+    total += pret;
+    document.getElementById("total").textContent = total;
+}

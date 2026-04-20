@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #111;
     color: white;
 }
@@ -13,9 +13,10 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
     color: orange;
+    letter-spacing: 2px;
 }
 
 nav a {
@@ -27,15 +28,16 @@ nav a {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to right, #111, #333);
+    background: linear-gradient(to right, #ffd54f, #ff9800);
 }
 
 .hero button {
     padding: 10px 20px;
-    background: orange;
+    background: black;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    color: orange;
 }
 
 .produse {
@@ -145,4 +147,79 @@ html {
 
     display: none; /* ascuns la început */
     z-index: 9999;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social a {
+    color: orange;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: rgba(255, 166, 0, 0.748);
+    transform: scale(1.2);
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: orange;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2, .logo {
+    text-shadow: 0 0 10px rgba(255,165,0,0.7);
+}
+
+#cart {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 250px;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#cart h2 {
+    font-size: 18px;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    margin-bottom: 5px;
+}
+
+.buy-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(45deg, orange, #ff6600);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #ff6600, orange);
+}
+
+.buy-btn:active {
+    transform: scale(0.95);
 }
