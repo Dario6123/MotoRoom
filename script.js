@@ -1,13 +1,17 @@
 console.log("MotoRoom site încărcat 🚀");
 
+// 🔥 VARIABILE GLOBALE (IMPORTANT)
+let total = 0;
+let count = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
 
-    // DARK MODE
+    // 🌙 DARK MODE
     window.toggleTheme = function () {
         document.body.classList.toggle("light-mode");
     };
 
-    // BUTON UP
+    // ⬆ BUTON UP
     let btn = document.getElementById("backToTop");
 
     window.addEventListener("scroll", function () {
@@ -25,39 +29,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     };
 
-    // COS
-let total = 0;
-    let count = 0;
+    // 🛒 ADAUGĂ ÎN COȘ
+    window.addToCart = function (nume, pret) {
+        let lista = document.getElementById("cartItems");
 
-   window.addToCart = function (nume, pret) {
-    let lista = document.getElementById("cartItems");
+        let item = document.createElement("li");
 
-    let item = document.createElement("li");
+        item.innerHTML = `
+            ${nume} - ${pret}€
+            <button class="remove-btn">❌</button>
+        `;
 
-    item.innerHTML = `
-        ${nume} - ${pret}€
-        <button class="remove-btn">❌</button>
-    `;
+        lista.appendChild(item);
 
-    lista.appendChild(item);
-
-    total += pret;
-    count++;
-
-    document.getElementById("total").textContent = total;
-    document.getElementById("cartCount").textContent = count;
-
-    // 🔥 BUTON ȘTERGERE
-    item.querySelector(".remove-btn").addEventListener("click", function () {
-        lista.removeChild(item);
-
-        total -= pret;
-        count--;
+        total += pret;
+        count++;
 
         document.getElementById("total").textContent = total;
         document.getElementById("cartCount").textContent = count;
-    });
-};
+
+        // ❌ ȘTERGERE PRODUS
+        item.querySelector(".remove-btn").addEventListener("click", function () {
+            lista.removeChild(item);
+
+            total -= pret;
+            count--;
+
+            document.getElementById("total").textContent = total;
+            document.getElementById("cartCount").textContent = count;
+        });
+    };
+
+    // 🧺 DESCHIDE / ÎNCHIDE COȘ
     window.toggleCart = function () {
         let cart = document.getElementById("cartBox");
 
@@ -69,3 +72,25 @@ let total = 0;
     };
 
 });
+
+// 🧾 FINALIZARE COMANDĂ (FAKE ORDER)
+window.placeOrder = function () {
+
+    if (count === 0) {
+        alert("Coșul este gol!");
+        return;
+    }
+
+    alert("✅ Comanda ta a fost trimisă cu succes!");
+
+    // golește coșul
+    document.getElementById("cartItems").innerHTML = "";
+
+    total = 0;
+    count = 0;
+
+    document.getElementById("total").textContent = total;
+    document.getElementById("cartCount").textContent = count;
+
+    console.log("Comandă finalizată ✔️");
+};
