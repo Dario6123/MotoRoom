@@ -13,11 +13,7 @@
     <header>
         <div class="logo">MotoRoom</div>
 
-        <div id="cart">
-    <h2>Coș de cumpărături</h2>
-    <ul id="cartItems"></ul>
-    <p>Total: <span id="total">0</span> €</p>
-</div>
+      
 
         <nav>
             <a href="#">Acasă</a>
@@ -25,8 +21,18 @@
             <a href="#Motociclete">Motociclete</a>
             <a href="#Consumabile">Consumabile</a>
             <a href="#Contact">Contact</a>
+            <button id="cartBtn" onclick="toggleCart()">
+    🛒 (<span id="cartCount">0</span>)
+</button>
             <button onclick="toggleTheme()">🌙</button>
         </nav>
+
+        <div id="cartBox">
+    <h2>Coș</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: <span id="total">0</span> €</p>
+</div>
+
     </header>
 
     <section class="hero">
@@ -42,34 +48,34 @@
     <h2>ATV-uri</h2>
     <div class="grid">
 
-        <div class="item"><img src="images/canam-renegade-11.jpg"><h3>CAN-AM RENEGADE 1000R</h3><p>17.650 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/canam-renegade-11.jpg"><h3>CAN-AM RENEGADE 1000R</h3><p>17.650 EUR</p><button onclick="addToCart('Can-Am Renegade 1000R', 17650)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/canam renegade xmr.jpg"><h3>CAN-AM RENEGADE 1000R XMR</h3><p>19.450 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/canam renegade xmr.jpg"><h3>CAN-AM RENEGADE 1000R XMR</h3><p>19.450 EUR</p><button onclick="addToCart('Can-Am Renegade 1000R XMR', 19450)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/outlander.jpg"><h3>CAN-AM OUTLANDER 1000R XTP</h3><p>18.500 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/outlander.jpg"><h3>CAN-AM OUTLANDER 1000R XTP</h3><p>18.500 EUR</p><button onclick="addToCart('Can-Am Outlander 1000R XTP', 18500)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/6x6.jpg"><h3>CAN-AM OUTLANDER MAX 6x6 1000R</h3><p>21.555 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/6x6.jpg"><h3>CAN-AM OUTLANDER MAX 6x6 1000R</h3><p>21.555 EUR</p><button onclick="addToCart('Can-Am Outlander Max 6x6 1000R', 21555)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/cfmoto cforce.jpg"><h3>CFMOTO CFORCE 1000</h3><p>10.990 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/cfmoto cforce.jpg"><h3>CFMOTO CFORCE 1000</h3><p>10.990 EUR</p><button onclick="addToCart('Cfmoto Cforce 1000', 10990)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/cfmoto cforce mud.jpg"><h3>CFMOTO CFORCE 1000 X10 MUD</h3><p>12.990 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/cfmoto cforce mud.jpg"><h3>CFMOTO CFORCE 1000 X10 MUD</h3><p>12.990 EUR</p><button onclick="addToCart('Cfmoto Cforce 1000 X10 MUD', 12990)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/polaris-sportsman.jpg"><h3>POLARIS SPORTSMAN XP1000 S</h3><p>19.280 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/polaris-sportsman.jpg"><h3>POLARIS SPORTSMAN XP1000 S</h3><p>19.280 EUR</p><button onclick="addToCart('Polaris Sportsman XP1000 S', 19280)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/polaris-scrambler.jpg"><h3>POLARIS SCRAMBLER XP1000 S</h3><p>17.580 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/polaris-scrambler.jpg"><h3>POLARIS SCRAMBLER XP1000 S</h3><p>17.580 EUR</p><button onclick="addToCart('Polaris Scrambler XP1000 S', 17580)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha grizzly.jpg"><h3>YAMAHA GRIZZLY 700</h3><p>15.980 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha grizzly.jpg"><h3>YAMAHA GRIZZLY 700</h3><p>15.980 EUR</p><button onclick="addToCart('Yamaha Grizzly 700', 15980)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/trx.jpg"><h3>HONDA TRX520</h3><p>11.290 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/trx.jpg"><h3>HONDA TRX520</h3><p>11.290 EUR</p><button onclick="addToCart('Honda TRX520', 11290)" class="buy-btn">
     🛒 Cumpără
 </button></div>
 
@@ -80,34 +86,34 @@
     <h2>Motociclete</h2>
     <div class="grid">
 
-        <div class="item"><img src="images/yamaha mt07.jpg"><h3>YAMAHA MT-07</h3><p>8.190 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha mt07.jpg"><h3>YAMAHA MT-07</h3><p>8.190 EUR</p><button onclick="addToCart('Yamaha mt-07', 8190)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha mt09 sp.jpg"><h3>YAMAHA MT-09 SP</h3><p>13.290 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha mt09 sp.jpg"><h3>YAMAHA MT-09 SP</h3><p>13.290 EUR</p><button onclick="addToCart('Yamaha mt-09 SP', 13290)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha mt10 sp.jpg"><h3>YAMAHA MT-10 SP</h3><p>17.290 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha mt10 sp.jpg"><h3>YAMAHA MT-10 SP</h3><p>17.290 EUR</p><button onclick="addToCart('Yamaha mt-10 SP', 17290)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha xsr900.jpg"><h3>YAMAHA XSR900</h3><p>11.490 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha xsr900.jpg"><h3>YAMAHA XSR900</h3><p>11.490 EUR</p><button onclick="addToCart('Yamaha XSR900', 11490)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha yz450f.jpg"><h3>YAMAHA YZ450F</h3><p>10.990 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha yz450f.jpg"><h3>YAMAHA YZ450F</h3><p>10.990 EUR</p><button onclick="addToCart('Yamaha YZ450F', 10990)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha-r1m.jpg"><h3>YAMAHA R1M</h3><p>31.990 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha-r1m.jpg"><h3>YAMAHA R1M</h3><p>31.990 EUR</p><button onclick="addToCart('Yamaha R1M', 31990)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/yamaha r6 race.jpg"><h3>YAMAHA R6 RACE</h3><p>15.290 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/yamaha r6 race.jpg"><h3>YAMAHA R6 RACE</h3><p>15.290 EUR</p><button onclick="addToCart('Yamaha R6 RACE', 15290)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/kawasaki z1100 se.jpg"><h3>KAWASAKI Z1100 SE</h3><p>14.990 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/kawasaki z1100 se.jpg"><h3>KAWASAKI Z1100 SE</h3><p>14.990 EUR</p><button onclick="addToCart('Kawasaki Z1100 SE', 14990)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/kawasaki ninja zx10r.jpg"><h3>KAWASAKI NINJA ZX10R</h3><p>20.890 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/kawasaki ninja zx10r.jpg"><h3>KAWASAKI NINJA ZX10R</h3><p>20.890 EUR</p><button onclick="addToCart('Kawasaki Ninja ZX10R', 20890)" class="buy-btn">
     🛒 Cumpără
 </button></div>
-        <div class="item"><img src="images/suzuki gsxr1000.jpg"><h3>SUZUKI GSXR1000</h3><p>21.190 EUR</p><button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+        <div class="item"><img src="images/suzuki gsxr1000.jpg"><h3>SUZUKI GSXR1000</h3><p>21.190 EUR</p><button onclick="addToCart('Suzuki GSXR1000', 21190)" class="buy-btn">
     🛒 Cumpără
 </button></div>
 
@@ -122,7 +128,7 @@
             <img src="images/amsoil atvutv.jpg">
             <h3>ULEI MOTOR ATV 10W40 </h3>
             <p>20 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Ulei motor ATV 10W40', 20)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -131,7 +137,7 @@
             <img src="images/amsoil moto.jpg">
             <h3>ULEI MOTO 10W40 </h3>
             <p>20 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Ulei moto 10W40', 20)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -140,7 +146,7 @@
             <img src="images/ngk.jpg">
             <h3>BUJIE</h3>
             <p>12 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Bujie', 12)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -149,7 +155,7 @@
             <img src="images/michelin.jpg">
             <h3>ANVELOPE MOTO</h3>
             <p>200 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Anvelope moto', 200)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -158,7 +164,7 @@
             <img src="images/maxxis.jpg">
             <h3>ANVELOPE ATV</h3>
             <p>100 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Anvelope ATV', 100)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -167,7 +173,7 @@
             <img src="images/curea.jpg">
             <h3>CUREA TRANSMISIE ATV</h3>
             <p>230 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Curea transmisie ATV', 230)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -176,7 +182,7 @@
             <img src="images/spray.jpg">
             <h3>ULEI LANT</h3>
             <p>16 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Ulei lant', 16)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -185,7 +191,7 @@
             <img src="images/baterie.jpg">
             <h3>BATERIE ATV/MOTO</h3>
             <p>95 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Baterie', 95)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -194,7 +200,7 @@
             <img src="images/led.jpg">
             <h3>LED H4 ATV/MOTO</h3>
             <p>11 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Led H4', 11)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
@@ -203,7 +209,7 @@
             <img src="images/clean.jpg">
             <h3>SOLUTIE CURATARE</h3>
             <p>10 EUR</p>
-            <button onclick="addToCart('ATV Sport 250', 3500)" class="buy-btn">
+            <button onclick="addToCart('Solutie curatare', 10)" class="buy-btn">
     🛒 Cumpără
 </button>
         </div>
