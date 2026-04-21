@@ -246,6 +246,10 @@ h2, .logo {
     z-index: 1000;
 }
 
+#cartBox.show {
+    display: block;
+}
+
 .remove-btn {
     margin-left: 10px;
     background: red;
