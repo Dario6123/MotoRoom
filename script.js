@@ -70,3 +70,7 @@ window.addEventListener("scroll", function () {
         btn.style.display = "none";
     }
 });
+
+window.toggleCategories = function () {
+    document.getElementById("categoriesMenu").classList.toggle("show");
+};

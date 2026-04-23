@@ -21,6 +21,21 @@
             <a href="#Motociclete">Motociclete</a>
             <a href="#Consumabile">Consumabile</a>
             <a href="#Contact">Contact</a>
+
+
+            <div class="dropdown">
+    <button class="dropbtn" onclick="toggleCategories()">Categorii</button>
+
+    <div id="categoriesMenu" class="dropdown-content">
+        <a href="#Casti">Căști</a>
+        <a href="#Bluza">Bluză</a>
+        <a href="#Pantaloni">Pantaloni</a>
+        <a href="#Manusi">Mănuşi</a>
+        <a href="#Genti">Genţi</a>
+    </div>
+
+
+</div>
             <button id="cartBtn" onclick="toggleCart()">
     🛒 (<span id="cartCount">0</span>)
 </button>
@@ -220,6 +235,239 @@
 
     </div>
 </section>
+
+<section class="sectiune" id="Casti">
+    <h2>Căști</h2>
+    <div class="grid">
+
+        <div class="item">
+            <img src="images/1241998756.shoei-nxr2.jpg">
+            <h3>Cască Shoei</h3>
+            <p>125 EUR</p>
+            <button onclick="addToCart('Casca Shoei', 125)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/raven.jpg">
+            <h3>Cască Raven </h3>
+            <p>100 EUR</p>
+            <button onclick="addToCart('Casca Raven', 100)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/bell.jpg">
+            <h3>Cască Bell</h3>
+            <p>180 EUR</p>
+            <button onclick="addToCart('Casca Bell', 180)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/images.jpg">
+            <h3>Cască Fox</h3>
+            <p>95 EUR</p>
+            <button onclick="addToCart('Casca Fox', 95)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/scott.jpg">
+            <h3>Cască Scott</h3>
+            <p>200 EUR</p>
+            <button onclick="addToCart('Casca Scott', 200)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+    </section>
+
+
+        <section class="sectiune" id="Bluza">
+    <h2>Bluză</h2>
+    <div class="grid">
+
+        <div class="item">
+            <img src="images/bluza a.jpg">
+            <h3>Bluza Alpinestars</h3>
+            <p>40 EUR</p>
+            <button onclick="addToCart('Bluza Alpinestars', 40)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/bluza b.jpg">
+            <h3>Bluza Thor </h3>
+            <p>40 EUR</p>
+            <button onclick="addToCart('Bluza Thor', 40)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/bluza c.jpg">
+            <h3>Bluza Fox</h3>
+            <p>60 EUR</p>
+            <button onclick="addToCart('Bluza Fox', 60)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/bluza d.jpg">
+            <h3>Bluza RedBull</h3>
+            <p>62 EUR</p>
+            <button onclick="addToCart('Bluza RedBull', 62)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/geaca.jpg">
+            <h3>Geaca piele Alpinestars</h3>
+            <p>320 EUR</p>
+            <button onclick="addToCart('Geaca piele', 320)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+
+    </div>
+</section>
+
+ <section class="sectiune" id="Pantaloni">
+    <h2>Pantaloni</h2>
+    <div class="grid">
+
+        <div class="item">
+            <img src="images/ufo a.jpg">
+            <h3>Pantaloni UFO</h3>
+            <p>40 EUR</p>
+            <button onclick="addToCart('Pantaloni UFO', 40)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/ufo b.jpg">
+            <h3>Pantaloni Fox </h3>
+            <p>50 EUR</p>
+            <button onclick="addToCart('Pantaloni Fox', 50)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/ufo c.jpg">
+            <h3>Pantaloni Thor</h3>
+            <p>45 EUR</p>
+            <button onclick="addToCart('Pantaloni Thor', 45)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/ufo d.jpg">
+            <h3>Pantaloni piele Alpinestars</h3>
+            <p>410 EUR</p>
+            <button onclick="addToCart('Pantaloni piele Alpinestars', 410)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+
+    </div>
+</section>
+
+
+ <section class="sectiune" id="Manusi">
+    <h2>Mănuşi</h2>
+    <div class="grid">
+
+        <div class="item">
+            <img src="images/ma a.jpg">
+            <h3>Manusi Fox</h3>
+            <p>35 EUR</p>
+            <button onclick="addToCart('Manusi Fox', 35)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/ma b.jpg">
+            <h3>Manusi piele Alpinestars </h3>
+            <p>85 EUR</p>
+            <button onclick="addToCart('Manusi piele Alpinestars', 85)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/ma d.jpg">
+            <h3>Manusi 100%</h3>
+            <p>45 EUR</p>
+            <button onclick="addToCart('Manusi 100%', 45)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/manusi.jpg">
+            <h3>Manusi Yamaha</h3>
+            <p>50 EUR</p>
+            <button onclick="addToCart('Manusi Yamaha', 50)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="sectiune" id="Ochelari">
+    <h2>Ochelari</h2>
+    <div class="grid">
+
+        <div class="item">
+            <img src="images/oc a.jpg">
+            <h3>Ochelari 100%</h3>
+            <p>30 EUR</p>
+            <button onclick="addToCart('Ochelari 100%', 30)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/oc b.jpg">
+            <h3>Ochelari RedBull </h3>
+            <p>40 EUR</p>
+            <button onclick="addToCart('Ochelari RedBull', 40)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/oc c.jpg">
+            <h3>Ochelari Alpinestars</h3>
+            <p>50 EUR</p>
+            <button onclick="addToCart('Ochelari Alpinestars', 50)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/ocs.jpg">
+            <h3>Ochelari Scott</h3>
+            <p>45 EUR</p>
+            <button onclick="addToCart('Ochelari Scott', 45)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="sectiune" id="Genti">
+    <h2>Genţi</h2>
+    <div class="grid">
+
+        <div class="item">
+            <img src="images/genti a.jpg">
+            <h3>Geanta moto Kriega</h3>
+            <p>195 EUR</p>
+            <button onclick="addToCart('Geanta Kriega', 195)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/geanta b.jpg">
+            <h3>Geanta textila </h3>
+            <p>250 EUR</p>
+            <button onclick="addToCart('Geanta textila', 250)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/rucsac a.jpg">
+            <h3>Rucsac impermeabil</h3>
+            <p>70 EUR</p>
+            <button onclick="addToCart('Rucsac impermeabil', 70)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+        <div class="item">
+            <img src="images/rucsac b.jpg">
+            <h3>Rucsac offroad</h3>
+            <p>65 EUR</p>
+            <button onclick="addToCart('Rucsac offroad', 65)" class="buy-btn">🛒 Cumpără</button>
+        </div>
+
+
+    </div>
+</section>
+
+
+
 
 <section class="sectiune" id="Contact">
     <h2>Contact</h2>
